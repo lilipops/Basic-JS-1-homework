@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strct'
+    var a = 10 + 10 + "10";
+    /* 
+    1 10 + 10 = 20 
+    2 20 + '10' = 2010 
+
+       */
+    var b = 10 + "10" + 10;
+    /* В этой строке получится 10 + '10' в результате 1010 
+    а потом ещё прибавится десятка и в итоге будет 101010*/
+    var c = 10 + 10 + +"10"; 
+    /*Сначала суммируются 10 + 10 получится 20 
+    потом вот эта строка в которой записано 10 
+    Переведёт ца в число Потому что в ней два плюса = 30*/
+    var d = 10 / -"";
+    // -infinity Потому что в строке ничего не записано 10 / -0 = -infintiy
+    var e = 10 / +"2,5"; 
+    // NaN Потому что вместо 2,5 нужно было написать 2.5 джаваскрипт не умеет читать запятые
+
+    </script>
+</body>
+</html>
